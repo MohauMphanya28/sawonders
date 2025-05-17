@@ -56,7 +56,6 @@
   transform: scaleX(1);
 }
 
-
 /* Search Bar */
 
 .booking {
@@ -249,4 +248,47 @@
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+}
+
+/* Contact Image */
+
+.contact {
+  width: auto;
+  height: 500px;
+  padding: 0px 30px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.contact img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.contact div {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact div p {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 90px;
+  line-height: 80px;
+}
+
+.contact div button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(255, 56, 93);
+  color: white;
 }
