@@ -257,7 +257,6 @@ nav .fa-bars {
 }
 
 
-
 .navbar-white {
   background: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -399,6 +398,7 @@ nav.navbar-white .fa-bars {
   background: #333;
   color: #fff;
 }
+
 
 
 @media only screen and (max-width: 700px) {
@@ -583,6 +583,7 @@ nav.navbar-white .fa-bars {
   border-radius: 8px;
 }
 
+
 @media only screen and (max-width: 700px) {
   .house-details {
     margin-top: 150px;
@@ -628,6 +629,7 @@ nav.navbar-white .fa-bars {
     margin: 40px 0;
   }
 }
+
 
 .comment-section {
   width: 100%;

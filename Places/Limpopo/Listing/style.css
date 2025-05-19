@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: "Geologica", sans-serif;
 }
 .header {
   min-height: 100vh;
@@ -90,7 +90,7 @@ nav {
   font-weight: 600;
 }
 
-
+/* ---------exclusives------------- */
 .sub-title {
   margin: 50px 0 20px;
   font-size: 2.2vw;
@@ -119,7 +119,7 @@ nav {
 }
 
 
-
+/* -----footer------- */
 .footer {
   margin: 80px 0 10px;
   text-align: center;
@@ -158,7 +158,7 @@ nav {
 nav .fa-bars {
   display: none;
 }
-
+/* ---------for small screen devices--- */
 @media only screen and (max-width: 700px) {
   .logo {
     position: fixed;
@@ -256,60 +256,100 @@ nav .fa-bars {
   }
 }
 
-
+/* ----------- listing page---- */
 
 .navbar-white {
   background: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
-.navbar-white .nav-links li a {
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.nav-links p {
+  margin: 0px 15px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-bottom: 5px; /* Makes space for the underline */
+  color: black;
+}
+
+.nav-links p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(255, 56, 93);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links p:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-links p a {
+  text-decoration: none;
   color: #000;
 }
-.navbar-white .register-btn {
-  background: #ff5361;
-  color: #fff;
-}
-nav.navbar-white .fa-bars {
-  color: #000;
-}
-.navbar-white .active::after {
-  background: #ff5361;
-}
+
 .list-container {
   margin-top: 50px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
 }
+
 .left-col {
   flex-basis: 70%;
 }
-.right-col {
-  flex-basis: 25%;
-}
+
 .left-col h1 {
   color: #333;
   font-weight: 600;
   margin-bottom: 30px;
+  width: 100%;
 }
+
 .house {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 30px 0;
   border-top: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
+
 .house-img {
   flex-basis: 40%;
-}
-.house-info {
-  flex-basis: 58%;
-  color: #555;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .house-img img {
   width: 100%;
+  height: 350px;
   border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.house-info {
+  flex-basis: 58%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  color: #555;
 }
 
 .house-info h3 {
@@ -341,38 +381,6 @@ nav.navbar-white .fa-bars {
   font-size: 20px;
 }
 
-.sidebar {
-  border: 1px solid #999;
-  padding: 20px 30px;
-  margin-top: 30px;
-}
-.sidebar h2 {
-  font-weight: 500;
-}
-.sidebar h3 {
-  font-weight: 500;
-  margin: 20px 0 10px;
-}
-.filter {
-  display: flex;
-  align-items: center;
-  color: #555;
-  margin-bottom: 10px;
-}
-.filter p {
-  flex: 1;
-}
-.filter input {
-  margin-right: 15px;
-  cursor: pointer;
-}
-.sidebar-link {
-  text-align: right;
-  margin: 20px 0;
-}
-.sidebar-link a {
-  text-decoration: none;
-}
 .pagination {
   display: flex;
   align-items: center;
@@ -400,6 +408,7 @@ nav.navbar-white .fa-bars {
   color: #fff;
 }
 
+/* ------small screen for listing page ---------- */
 
 @media only screen and (max-width: 700px) {
   .list-container {
@@ -429,7 +438,7 @@ nav.navbar-white .fa-bars {
   }
 }
 
-
+/* ----------house-details page------------- */
 .house-details {
   padding: 0 12%;
 }
@@ -582,7 +591,7 @@ nav.navbar-white .fa-bars {
   border: 1px solid #ff5361;
   border-radius: 8px;
 }
-
+/* -----media query for house details page---------- */
 @media only screen and (max-width: 700px) {
   .house-details {
     margin-top: 150px;
@@ -629,6 +638,13 @@ nav.navbar-white .fa-bars {
   }
 }
 
+.mainImage{
+  height: 100%;
+}
+
+/* Comment Section */
+
+/* Add Comment */
 .comment-section {
   width: 100%;
   padding: 20px;
@@ -674,7 +690,7 @@ nav.navbar-white .fa-bars {
   cursor: pointer;
 }
 
-
+/* Saved Comments */
 
 .saved-comments {
   width: 100%;

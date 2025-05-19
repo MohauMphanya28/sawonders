@@ -118,8 +118,6 @@ nav {
   color: #fff;
 }
 
-
-
 .footer {
   margin: 80px 0 10px;
   text-align: center;
@@ -255,7 +253,6 @@ nav .fa-bars {
     font-size: 15px;
   }
 }
-
 
 
 .navbar-white {
@@ -399,6 +396,7 @@ nav.navbar-white .fa-bars {
   background: #333;
   color: #fff;
 }
+
 
 
 @media only screen and (max-width: 700px) {
@@ -629,6 +627,8 @@ nav.navbar-white .fa-bars {
   }
 }
 
+
+
 .comment-section {
   width: 100%;
   padding: 20px;
@@ -673,7 +673,6 @@ nav.navbar-white .fa-bars {
   font-size: 16px;
   cursor: pointer;
 }
-
 
 
 .saved-comments {
