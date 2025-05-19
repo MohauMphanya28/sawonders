@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Details Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Modjadji Cycad Reserve</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span>42 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Near Duiwelskloof, Limpopo Province, South Africa</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img class="mainImage" src="View.jpg" alt="Modjadji Cycad Reserve View"></div>
+            <div><img src = "Forest.jpg" alt="Cycads in forest" ></div>
+            <div><img src="Reserve.jpg" alt="Greenery at Modjadji Reserve" class="mainImage" ></div>
+            <div><img src="Footpath.jpg" alt="Reserve footpath view" class="mainImage"> </div>
+            <div><img src="trees.jpg" alt="Cycad trees up close" ></div>
+        </div>
+        <div class="small-details">
+            <h4>Botanical and Cultural Gem</h4>
+            <p>The Modjadji Cycad Reserve is home to the world’s largest population of the rare Encephalartos transvenosus cycad. It is also culturally significant due to its connection to the Rain Queen Modjadji, a mystical figure in local tradition.</p>
+            <h4>Prices</h4>
+            <p>Adult - R50 / day</p>
+            <p>Child - R25 / day</p>
+        </div>
+        <hr class="line">
+
+        <ul class="details-list">
+            <li><i class="fas fa-leaf"></i>Rare Flora
+                <span>Features over 10,000 protected Modjadji cycads, creating a prehistoric forest atmosphere.</span>
+            </li>
+            <li><i class="fas fa-crown"></i>Cultural Significance
+                <span>Named after the legendary Rain Queen, Modjadji, who is believed to have mystical powers to bring rain.</span>
+            </li>
+            <li><i class="fas fa-hiking"></i>Walking Trails
+                <span>Scenic trails allow visitors to explore the reserve and spot wildlife such as bushbuck and birds.</span>
+            </li>
+            <li><i class="fas fa-book-open"></i>Interpretive Centre
+                <span>Learn about the history of the Rain Queen and the ecological importance of cycads.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">Nestled in Limpopo, the Modjadji Cycad Reserve offers a unique blend of ancient plant life and rich cultural history. Its dense cycad forests, associated with royalty and rain-making traditions, make it a peaceful retreat and a must-visit for nature lovers and history enthusiasts alike.</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.136133289478!2d30.29802267570394!3d-23.821688078626777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec75e1a09a8f40b%3A0xa5a9a626d472a5d!2sModjadji%20Nature%20Reserve!5e0!3m2!1sen!2sza!4v1745768888888!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="line">
+    </div>
+    <div class="comment-section">
+      <div class="add-comment">
+        <h1>Add your comment here</h1>
+        <textarea
+          class="comment-input"
+          placeholder="Add your comment here..."
+        ></textarea>
+        <button class="comment-submitBtn">Submit</button>
+      </div>
+
+      <div class="saved-comments">
+        <h1>Comments</h1>
+        <div class="comment">
+
+          <div class="comment-left">
+            <div class="user-icon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+            <div class="comment-info">
+              <div class="username">
+                <p><b>Sakhile Shabalala</b></p>
+              </div>
+              <p>Its's great!</p>
+            </div>
+          </div>
+
+          <div class="comment-right">
+            <i class="fa fa-pencil edit-comment" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-comment" aria-hidden="true"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2025, Dev Collective.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

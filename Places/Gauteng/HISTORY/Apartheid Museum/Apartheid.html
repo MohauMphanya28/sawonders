@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Details Page </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Apartheid Museum </h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span>25 Reviews</span>
+                </div>
+                <div>
+                    <p>Northern Parkway & Gold Reef Road, Ormonde, Johannesburg </p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery"> <!-- This div holds all the pictures. -->
+            <div class="gallery-img-1"><img src="apar5.jpg"class="mainImage"></div>
+            <div><img src="apar2.jpeg"class="mainImage"></div>
+            <div><img src="apar3.jpeg"class="mainImage"></div>
+            <div><img src="apar4.jpeg"class="mainImage"></div>
+            <div><img src="apar1.jpeg"class="mainImage"></div>
+        </div>
+        <div class="small-details">
+            <h4>Operating Hours </h4>
+            <p>Open: Wednesday to Sunday
+               <br>
+                Hours: 09:00 AM to 5:00 PM
+                <br>
+                Last Entry: 4:00 PM
+                <br>
+                Closed: Mondays and Tuesdays </p>
+            <h4>Entrance Fees</h4>
+            <p>General Admission (Includes Audio Tour):
+                Adults: R160
+                <br>
+                Students / Pensioners / Children: R110
+                (Valid ID or student card required)
+                <br>
+                Guided Tour Option:
+                Adults: R175
+                <br>
+                Students / Pensioners / Children: R125</p>
+            
+        </div>
+        <hr class="line">
+
+        <ul class="details-list">
+            <!-- A few benefits/ highlights about the place -->
+            <li><i class="fas fa-home"></i>Powerful Exhibits
+                <span>Over 20 permanent exhibitions using film, photographs, text, and artifacts. </span>
+            </li>
+            <li><i class="fas fa-paint-brush"></i>Passbook Entry Experience
+                <span>Visitors are randomly assigned an identity (White or Non-White) at the entrance, reflecting the racial classification system of apartheid.
+
+                </span>
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i>Mandela and Tutu Exhibits
+                <span>Displays focusing on key figures like Nelson Mandela and Desmond Tutu.</span>
+            </li>
+            <li><i class="fas fa-heart"></i>Outdoor Garden of Reflection
+                <span>A quiet space for contemplation after the museum visit.
+                </span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">The Apartheid Museum is one of the most important cultural institutions in South Africa, dedicated to documenting the rise and fall of apartheid. Opened in 2001, the museum provides an emotional and educational journey through the history of racial segregation and the long struggle for freedom and equality in South Africa.</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3849.001661398329!2d28.005796375706275!3d-26.23787087705582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95093047fedeab%3A0x192ba3244efba5f4!2sApartheid%20Museum!5e1!3m2!1sen!2sza!4v1746355327934!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="line">
+    </div>
+    <div class="container">
+       <div class="comment-section">
+      <div class="add-comment">
+        <h1>Add your comment here</h1>
+        <textarea
+          class="comment-input"
+          placeholder="Add your comment here..."
+        ></textarea>
+        <button class="comment-submitBtn">Submit</button>
+      </div>
+
+      <div class="saved-comments">
+        <h1>Comments</h1>
+        <div class="comment">
+
+          <div class="comment-left">
+            <div class="user-icon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+            <div class="comment-info">
+              <div class="username">
+                <p><b>Sakhile Shabalala</b></p>
+              </div>
+              <p>Its's great!</p>
+            </div>
+          </div>
+
+          <div class="comment-right">
+            <i class="fa fa-pencil edit-comment" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-comment" aria-hidden="true"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+           
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2025, Dev Collective.</p>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

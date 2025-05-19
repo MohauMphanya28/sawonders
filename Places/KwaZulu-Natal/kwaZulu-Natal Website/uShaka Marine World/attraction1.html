@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Details Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+/>
+<body>
+
+    <div class="house-details">
+        <div class="house-title">
+            <h1>uShaka Marine World</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>134 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: 1 King Shaka Ave, Point, Durban, 4001, KwaZulu-Natal, South Africa</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="uShaka Marine.jpg" alt="uShaka entrance"></div>
+            <div><img src="Aquarium.jpg" alt="Aquarium" class="mainImage"></div>
+            <div><img src="Swimming Pool.avif" alt="Water slides" class="mainImage"></div>
+            <div><img src="Dolphin show.jpg" alt="Dolphin show" class="mainImage"></div>
+            <div><img src="Snorkel lagoon.jpg" alt="Snorkel lagoon" class="mainImage"></div>
+        </div>
+        <div class="small-details">
+            <h4>Top Ocean-Themed Entertainment Destination</h4>
+            <p>uShaka Marine World is a premier marine theme park in Durban, offering fun, education, and adventure for the whole family. From aquariums and dolphin shows to water slides and restaurants, it's a hub of marine wonder.</p>
+            <h4>Prices</h4>
+            <p>Adult - R157 / day</p>
+            <p>Child - R125 / day</p>
+        </div>
+        <hr class="line">
+
+        <ul class="details-list">
+            <li><i class="fas fa-fish"></i>Aquarium Adventures
+                <span>Explore one of the largest aquariums in the Southern Hemisphere featuring sharks, turtles, and colorful reef fish.</span>
+            </li>
+            <li><i class="fas fa-water"></i>Wet 'n Wild Waterpark
+                <span>Thrilling slides, lazy rivers, and splash zones perfect for all ages to cool off and have fun.</span>
+            </li>
+            <li><i class="fas fa-dolphin"></i>Live Animal Shows
+                <span>Be amazed by the dolphin and seal performances in the state-of-the-art stadiums.</span>
+            </li>
+            <li><i class="fas fa-utensils"></i>Shopping & Dining
+                <span>Enjoy beachside restaurants and shops offering everything from souvenirs to gourmet meals.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">Located on Durban's Golden Mile, uShaka Marine World combines family fun with marine conservation. Whether you're seeking a splash in the waterpark or a quiet stroll through an underwater tunnel, it's a destination that blends excitement and education on the edge of the Indian Ocean.</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.1634864292324!2d31.04593807547529!3d-29.868961775009234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7aa043b3a47d5%3A0x987d2cbcb4be44c4!2suShaka%20Marine%20World!5e0!3m2!1sen!2sza!4v1747260726829!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="line">
+    </div>
+    <div class="comment-section">
+      <div class="add-comment">
+        <h1>Add your comment here</h1>
+        <textarea
+          class="comment-input"
+          placeholder="Add your comment here..."
+        ></textarea>
+        <button class="comment-submitBtn">Submit</button>
+      </div>
+
+      <div class="saved-comments">
+        <h1>Comments</h1>
+        <div class="comment">
+          <div class="comment-left">
+            <div class="user-icon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+            <div class="comment-info">
+              <div class="username">
+                <p><b>Lindiwe Mokoena</b></p>
+              </div>
+              <p>My kids loved the dolphin show and the water slides! Must-visit!</p>
+            </div>
+          </div>
+          <div class="comment-right">
+            <i class="fa fa-pencil edit-comment" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-comment" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+           
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2025, Dev Collective.</p>
+        </div>
+    </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html>

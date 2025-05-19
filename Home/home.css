@@ -1,5 +1,4 @@
 /* General */
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,6 @@
 }
 
 /* Header */
-
 .header {
   display: flex;
   align-items: center;
@@ -36,7 +34,7 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
-  padding-bottom: 5px; /* Makes space for the underline */
+  padding-bottom: 5px;
 }
 
 .header-center p::after {
@@ -56,8 +54,19 @@
   transform: scaleX(1);
 }
 
-/* Search Bar */
+.login i {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
 
+.user-greeting {
+  margin-left: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+/* Search Bar */
 .booking {
   background: white;
   height: 60px;
@@ -121,8 +130,7 @@
   margin: 0;
 }
 
-/* Home Page Image Card */
-
+/* Image Card */
 .main-card {
   position: relative;
   display: flex;
@@ -156,7 +164,6 @@
 }
 
 /* Inspiration */
-
 .inspiration {
   background-color: white;
   height: 500px;
@@ -213,8 +220,7 @@
   background-color: #cc2d4a;
 }
 
-/* Inspo Cards Slider */
-
+/* Slider */
 .inspo-slider {
   display: flex;
   align-items: center;
@@ -230,13 +236,12 @@
 .inspo-cards {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  /* Remove `gap` and manually set margin if needed */
 }
 
 .attraction {
   flex: 0 0 25%;
   box-sizing: border-box;
-  padding: 0 10px; /* simulate spacing without breaking layout */
+  padding: 0 10px;
 }
 
 .slider-btn {
@@ -250,8 +255,7 @@
   z-index: 1;
 }
 
-/* Contact Image */
-
+/* Contact */
 .contact {
   width: auto;
   height: 500px;
@@ -291,4 +295,38 @@
   cursor: pointer;
   background-color: rgb(255, 56, 93);
   color: white;
+}
+
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0;
+  width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown li:hover {
+  background-color: #f2f2f2;
+}
+
+.hidden {
+  display: none;
 }

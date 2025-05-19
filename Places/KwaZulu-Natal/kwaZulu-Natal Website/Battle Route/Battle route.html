@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Details Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+/>
+<body>
+
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Battlefields Route</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>134 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Dundee, KwaZulu-Natal, South Africa</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="Battlefields Main.jpg" alt="Battlefields entrance"></div>
+            <div><img src="Isandlwana.jpg" alt="Isandlwana site" class="mainImage"></div>
+            <div><img src="Rorkes Drift.jpg" alt="Rorke's Drift Museum" class="mainImage"></div>
+            <div><img src="War graves.jpg" alt="War graves" class="mainImage"></div>
+            <div><img src="Guided Tour.jpg" alt="Battlefield tour" class="mainImage"></div>
+        </div>
+        <div class="small-details">
+            <h4>Historic War Sites and Cultural Heritage</h4>
+            <p>The Battlefields Route is a historical trail in KwaZulu-Natal where visitors can explore sites of famous Anglo-Zulu and Anglo-Boer War battles, including Isandlwana and Rorke’s Drift. The route offers rich insights into South Africa’s military past.</p>
+            <h4>Prices</h4>
+            <p>Guided Tour - R250 / person</p>
+            <p>Museum Entry - R50 / person</p>
+        </div>
+        <hr class="line">
+
+        <ul class="details-list">
+            <li><i class="fas fa-fish"></i>Historical Battle Sites
+                <span>Visit the dramatic battlefields of Isandlwana and Rorke’s Drift where pivotal conflicts shaped history.</span>
+            </li>
+            <li><i class="fas fa-water"></i>War Memorials & Museums
+                <span>Explore museums and monuments that preserve the legacy of those who fought in the Zulu, British, and Boer wars.</span>
+            </li>
+            <li><i class="fas fa-dolphin"></i>Guided Heritage Tours
+                <span>Learn from expert guides who bring these stories to life with gripping detail and cultural insight.</span>
+            </li>
+            <li><i class="fas fa-utensils"></i>Local Hospitality
+                <span>Enjoy stays at historic lodges and homesteads while dining in traditional South African settings.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">The Battlefields Route in KwaZulu-Natal is a unique blend of history and heritage, offering a deep dive into South Africa’s past through preserved sites, memorials, and storytelling. Ideal for history lovers and cultural explorers, this route is both moving and educational.</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14331.383890005288!2d30.231457999999997!3d-28.1629134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef36201c4491aa1%3A0xcff73a3d67aa8a49!2sDundee%20Battlefields!5e0!3m2!1sen!2sza!4v1747267510000!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="line">
+    </div>
+    <div class="comment-section">
+      <div class="add-comment">
+        <h1>Add your comment here</h1>
+        <textarea
+          class="comment-input"
+          placeholder="Add your comment here..."
+        ></textarea>
+        <button class="comment-submitBtn">Submit</button>
+      </div>
+
+      <div class="saved-comments">
+        <h1>Comments</h1>
+        <div class="comment">
+          <div class="comment-left">
+            <div class="user-icon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+            <div class="comment-info">
+              <div class="username">
+                <p><b>Lindiwe Mokoena</b></p>
+              </div>
+              <p>The guided tour at Isandlwana gave me chills. A very emotional and powerful experience.</p>
+            </div>
+          </div>
+          <div class="comment-right">
+            <i class="fa fa-pencil edit-comment" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-comment" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+           
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2025, Dev Collective.</p>
+        </div>
+    </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html>

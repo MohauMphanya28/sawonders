@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Details Page - Kgaswane Mountain Reserve</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Kgaswane Mountain Reserve</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span>33 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Near Rustenburg, North West Province, South Africa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="Accommodation.jpg" alt="Kgaswane Mountain Reserve Accommodation"> </div>
+            <div><img src="Hiking.jpg" alt="Hiking trail in Kgaswane Reserve"></div>
+            <div><img src="Entrance.webp" alt="Wildlife in Kgaswane Reserve"> </div>
+            <div><img src="Entrance 2.jpeg" alt="Camping site in Kgaswane Reserve"></div>
+            <div><img src="Mountain.jpg" alt="Mountain view at Kgaswane"></div>
+        </div>
+
+        <div class="small-details">
+            <h4>Nature at Its Best</h4>
+            <p>Kgaswane Mountain Reserve offers breathtaking mountain scenery, hiking trails, and abundant wildlife. It’s the perfect place for nature lovers and outdoor enthusiasts looking to explore the natural beauty of the North West Province.</p>
+            <h4>Entry Fees</h4>
+            <p>Adult - R60 / day</p>
+            <p>Child - R35 / day</p>
+        </div>
+        <hr class="line">
+
+        <ul class="details-list">
+            <li><i class="fas fa-hiking"></i>Scenic Hiking Trails
+                <span>Multiple trails including the Peglarae and Summit trails offer spectacular views and varying difficulty levels.</span>
+            </li>
+            <li><i class="fas fa-binoculars"></i>Birdwatching
+                <span>Over 320 bird species can be spotted, making it a paradise for birdwatchers.</span>
+            </li>
+            <li><i class="fas fa-paw"></i>Wildlife Viewing
+                <span>Home to antelope, baboons, and other mammals, the reserve is a natural haven.</span>
+            </li>
+            <li><i class="fas fa-campground"></i>Camping & Lodging
+                <span>Camping facilities and mountain chalets are available for overnight stays.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">
+            Nestled in the Magaliesberg mountain range, Kgaswane Mountain Reserve is a natural retreat just outside Rustenburg. It provides a peaceful environment rich in biodiversity, with great opportunities for hiking, photography, and relaxation. Whether you're seeking adventure or serenity, this reserve has something to offer.
+        </p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.266845594578!2d27.193559175575227!3d-25.7018898773728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb4c98c8888d03%3A0x42e03d6e6bba34e5!2sKgaswane%20Mountain%20Reserve!5e0!3m2!1sen!2sza!4v1715630852781!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <hr class="line">
+    </div>
+<div class="comment-section">
+      <div class="add-comment">
+        <h1>Add your comment here</h1>
+        <textarea
+          class="comment-input"
+          placeholder="Add your comment here..."
+        ></textarea>
+        <button class="comment-submitBtn">Submit</button>
+      </div>
+
+      <div class="saved-comments">
+        <h1>Comments</h1>
+        <div class="comment">
+
+          <div class="comment-left">
+            <div class="user-icon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+            <div class="comment-info">
+              <div class="username">
+                <p><b>Sakhile Shabalala</b></p>
+              </div>
+              <p>Its's great!</p>
+            </div>
+          </div>
+
+          <div class="comment-right">
+            <i class="fa fa-pencil edit-comment" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-comment" aria-hidden="true"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2025, Dev Collective.</p>
+        </div>
+    </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+
+</body>
+</html>

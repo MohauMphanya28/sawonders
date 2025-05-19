@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attraction Details Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+/>
+<body>
+
+    <div class="house-details">
+        <div class="house-title">
+            <h1>iSimangaliso Wetland Park</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>134 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Main Road, St Lucia, KwaZulu-Natal, South Africa</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="iSimangaliso Main.jpg" alt="iSimangaliso entrance"></div>
+            <div><img src="Lake St Lucia.jpg" alt="Lake St Lucia" class="mainImage"></div>
+            <div><img src="Hippos.jpg" alt="Hippos in water" class="mainImage"></div>
+            <div><img src="Beach Dunes.jpg" alt="Coastal dunes" class="mainImage"></div>
+            <div><img src="Wildlife.jpg" alt="Wildlife" class="mainImage"></div>
+        </div>
+        <div class="small-details">
+            <h4>UNESCO World Heritage Wetland Reserve</h4>
+            <p>iSimangaliso Wetland Park is a unique ecological treasure offering visitors the chance to explore lakes, beaches, wetlands, coral reefs, and wildlife all in one destination. It is South Africa’s first World Heritage Site and one of KwaZulu-Natal’s most biodiverse regions.</p>
+            <h4>Prices</h4>
+            <p>Adult - R70 / day</p>
+            <p>Child - R40 / day</p>
+        </div>
+        <hr class="line">
+
+        <ul class="details-list">
+            <li><i class="fas fa-fish"></i>Lake and Estuary Tours
+                <span>Discover the beauty of Lake St Lucia, home to hippos, crocodiles, and hundreds of bird species.</span>
+            </li>
+            <li><i class="fas fa-water"></i>Beaches & Coastal Dunes
+                <span>Enjoy pristine beaches and some of the highest vegetated dunes in the world along the Indian Ocean coastline.</span>
+            </li>
+            <li><i class="fas fa-dolphin"></i>Marine and Wildlife Experiences
+                <span>Witness dolphins, turtles, and whales offshore while exploring game reserves teeming with land animals.</span>
+            </li>
+            <li><i class="fas fa-utensils"></i>Guided Safaris & Camping
+                <span>Experience unforgettable guided tours, camping, and eco-lodging within diverse natural habitats.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">Located in northern KwaZulu-Natal, iSimangaliso Wetland Park spans over 3,280 km² of unmatched ecological diversity. Whether birdwatching, snorkeling, game driving, or relaxing near lakes and forests, this destination celebrates South Africa’s natural beauty and conservation legacy.</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1772634.4890094465!2d31.676132152670505!3d-27.745658096060343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef5d55e41dbd61f%3A0x245b896db85b5c9e!2siSimangaliso%20Wetland%20Park!5e0!3m2!1sen!2sza!4v1747266200000!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="line">
+    </div>
+    <div class="comment-section">
+      <div class="add-comment">
+        <h1>Add your comment here</h1>
+        <textarea
+          class="comment-input"
+          placeholder="Add your comment here..."
+        ></textarea>
+        <button class="comment-submitBtn">Submit</button>
+      </div>
+
+      <div class="saved-comments">
+        <h1>Comments</h1>
+        <div class="comment">
+          <div class="comment-left">
+            <div class="user-icon">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+            <div class="comment-info">
+              <div class="username">
+                <p><b>Lindiwe Mokoena</b></p>
+              </div>
+              <p>Absolutely stunning! The estuary boat cruise and wildlife sightings were incredible!</p>
+            </div>
+          </div>
+          <div class="comment-right">
+            <i class="fa fa-pencil edit-comment" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-comment" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+           
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2025, Dev Collective.</p>
+        </div>
+    </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html>

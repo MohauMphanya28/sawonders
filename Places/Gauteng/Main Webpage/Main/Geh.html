@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore Gauteng Province</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: #000;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #ffffffdd;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h3 {
+    margin-top: 0;
+}
+
+/* Backgrounds per section */
+.entertainment {
+    background-image: url('https://images.unsplash.com/photo-1526406915894-6efc5ffdf41c');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nature {
+    background-image: url('https://images.unsplash.com/photo-1501761095094-446d7a7c98b3');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.history {
+    background-image: "";
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="overlay">
+
+        <header>
+            <h1>Welcome to Gauteng Province</h1>
+            <p>Discover South Africa's vibrant heart a blend of modern cities, breathtaking nature, and rich history. Gauteng invites you to explore its many attractions, from thrilling entertainment to serene landscapes and important historical sites.</p>
+        </header>
+
+        <section>
+           <h2 class="section-title">Entertainment</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="Goldie.jpg" alt="Gold Reef City"></a>
+                        <div class="card-body">
+                            <h3>Gold Reef City</h3>
+                            <p>Theme park and casino built around an old gold mine, offering rides, shows, and historical tours.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="monte.jpg" alt="Montecasino">
+                        <div class="card-body">
+                            <h3>Montecasino</h3>
+                            <p>Italian-themed complex with restaurants, theaters, shopping, and nightlife experiences.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Nelson.jpg" alt="Nelson Mandela Square">
+                        <div class="card-body">
+                            <h3>Nelson Mandela Square</h3>
+                            <p>Stylish Sandton hub with shopping, fine dining, and the iconic Mandela statue.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="maboneng.jpg" alt="Maboneng Precinct">
+                        <div class="card-body">
+                            <h3>Maboneng Precinct</h3>
+                            <p>Trendy arts district filled with galleries, restaurants, rooftop bars, and local shops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Nature</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Walter.jpg" alt="Walter Sisulu Botanical Garden">
+                    <div class="card-body">
+                        <h3>Walter Sisulu Botanical Garden</h3>
+                        <p>Beautiful gardens featuring waterfalls, picnic spots, and diverse birdlife near Johannesburg.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="riet.jpg" alt="Rietvlei Nature Reserve">
+                    <div class="card-body">
+                        <h3>Rietvlei Nature Reserve</h3>
+                        <p>Spot rhinos, buffalo, and other wildlife in this peaceful reserve near Pretoria.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Jozi.jpg" alt="Johannesburg Zoo">
+                    <div class="card-body">
+                        <h3>Johannesburg Zoo</h3>
+                        <p>One of South Africa's largest zoos, perfect for family outings and educational tours.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Cradle.jpg" alt="Cradle of Humankind">
+                    <div class="card-body">
+                        <h3>Cradle of Humankind</h3>
+                        <p>UNESCO World Heritage Site with ancient caves and exhibits about human origins.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">History</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="apartheid.jpg" alt="Apartheid Museum">
+                    <div class="card-body">
+                        <h3>Apartheid Museum</h3>
+                        <p>Powerful museum documenting South Africa's journey from apartheid to democracy.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="constitution.jpg" alt="Constitution Hill">
+                    <div class="card-body">
+                        <h3>Constitution Hill</h3>
+                        <p>Historic site and museum showcasing South Africa's human rights history.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="union.jpg" alt="Union Buildings">
+                    <div class="card-body">
+                        <h3>Union Buildings</h3>
+                        <p>Government seat in Pretoria with stunning gardens and panoramic city views.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="hector.jpg" alt="Hector Pieterson Memorial">
+                    <div class="card-body">
+                        <h3>Hector Pieterson Memorial</h3>
+                        <p>Memorial honoring the students of the 1976 Soweto Uprising.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <p>Copyright © 2025, Dev Collective.</p>
+</body>
+</html>
