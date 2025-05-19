@@ -192,14 +192,26 @@
   display: flex;
   flex-direction: column;
   border: none;
+  overflow: visible;
 }
 
-.attraction-img {
-  width: 100%;
-  height: 200px;
-  border-top-left-radius: 10px;
+
+.attraction a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+ border-radius: 10px; /* Round all corners */
+  overflow: hidden; /* Clip children to the rounded corners */
+}
+
+.attraction a img {
+  display: block;
+  width: 100%;  /* keep your width */
+  height: 200px; /* your height */
+    border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 
 .attraction-info {
   color: white;
