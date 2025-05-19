@@ -70,7 +70,7 @@
 .booking {
   background: white;
   height: 60px;
-  width: 800px;
+  width: 400px;
   margin: 0px auto 10px auto;
   padding: 2px 10px 0px 30px;
   border-radius: 50px;
@@ -399,4 +399,6 @@
 
 .prov-choice {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
