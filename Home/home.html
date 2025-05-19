@@ -43,19 +43,64 @@
       <div class="booking">
         <form>
           <div class="booking-optns">
+            <!-- In the booking section, modify the prov-input div -->
             <div class="optn prov-input">
-              <div>
-                <label>Province</label>
-                <input type="text" placeholder="Select Province" />
+              <div class="dropdown-wrapper">
+                <div class="prov-choice">
+                  <div class="prov-left">
+                    <label>Province</label>
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Select Province"
+                        id="provinceInput"
+                        readonly
+                      />
+                    </div>
+                  </div>
+
+                  <div class="prov-right">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <ul class="dropdown hidden">
+                  <li>Gauteng</li>
+                  <li>Western Cape</li>
+                  <li>KwaZulu-Natal</li>
+                  <li>Eastern Cape</li>
+                  <li>Free State</li>
+                  <li>Limpopo</li>
+                  <li>Mpumalanga</li>
+                  <li>North West</li>
+                  <li>Northern Cape</li>
+                </ul>
               </div>
-              <div><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
             </div>
             <div class="optn interest-input">
-              <div>
-                <label>Interest</label>
-                <input type="text" placeholder="Select Interest" />
+              <div class="dropdown-wrapper">
+                <label>Province</label>
+                <div style="display: flex; align-items: center">
+                  <input
+                    type="text"
+                    placeholder="Select Province"
+                    id="provinceInput"
+                    readonly
+                  />
+                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <ul class="dropdown hidden">
+                  <li>Gauteng</li>
+                  <li>Western Cape</li>
+                  <li>KwaZulu-Natal</li>
+                  <li>Eastern Cape</li>
+                  <li>Free State</li>
+                  <li>Limpopo</li>
+                  <li>Mpumalanga</li>
+                  <li>North West</li>
+                  <li>Northern Cape</li>
+                </ul>
               </div>
-              <div><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
             </div>
             <div class="search">
               <i class="fa fa-search" aria-hidden="true"></i>
@@ -84,7 +129,10 @@
           <div class="inspo-cards-wrapper">
             <div class="inspo-cards">
               <div class="attraction">
-                <a href="../Places/North West/Sun City Resort/SunCity.html" target="_blank">
+                <a
+                  href="../Places/North West/Sun City Resort/SunCity.html"
+                  target="_blank"
+                >
                   <img
                     src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/9d/a6/30/photo1jpg.jpg?w=600&h=-1&s=1"
                     alt="Sun City Resort"
@@ -98,7 +146,10 @@
               </div>
 
               <div class="attraction">
-                <a href="../Places/Gauteng/ENTERTAINMENT/Gold Reef City/Gold Reef City.html" target="_blank">
+                <a
+                  href="../Places/Gauteng/ENTERTAINMENT/Gold Reef City/Gold Reef City.html"
+                  target="_blank"
+                >
                   <img
                     src="../Places/Gauteng/ENTERTAINMENT/Gold Reef City/gold reef 4.jpeg"
                     alt="Sun City Resort"
@@ -112,21 +163,27 @@
               </div>
 
               <div class="attraction">
-                <a href="../Places/Mpumalanga/Kruger/kruger.html" target="_blank">
+                <a
+                  href="../Places/Mpumalanga/Kruger/kruger.html"
+                  target="_blank"
+                >
                   <img
                     src="../Places/Mpumalanga/Kruger/Sunset.jpg"
                     alt="Sun City Resort"
                     class="attraction-img"
                   />
                   <div class="attraction-info sun-city">
-                    <p class="attraction-name">Kruger National PArk</p>
+                    <p class="attraction-name">Kruger National Park</p>
                     <p>National park</p>
                   </div>
                 </a>
               </div>
 
               <div class="attraction">
-                <a href="../Places/KwaZulu-Natal/kwaZulu-Natal Website/Drakensberg Mountains/Drakensberg Mountains.html" target="_blank">
+                <a
+                  href="../Places/KwaZulu-Natal/kwaZulu-Natal Website/Drakensberg Mountains/Drakensberg Mountains.html"
+                  target="_blank"
+                >
                   <img
                     src="../Places/KwaZulu-Natal/kwaZulu-Natal Website/Drakensberg Mountains/Drakensberg Mountains.jpg"
                     alt="Drakensberg Mountains"
@@ -140,7 +197,10 @@
               </div>
 
               <div class="attraction">
-                <a href="../Places/Western Cape/Western Cape Website/Cape Town Table Mountain Hike with an Expert Guide/Western Cape.html" target="_blank">
+                <a
+                  href="../Places/Western Cape/Western Cape Website/Cape Town Table Mountain Hike with an Expert Guide/Western Cape.html"
+                  target="_blank"
+                >
                   <img
                     src="../Places/Western Cape/Western Cape Website/Cape Town Table Mountain Hike with an Expert Guide/Mountain Hike3.jpg"
                     alt="Sun City Resort"
@@ -152,7 +212,6 @@
                   </div>
                 </a>
               </div>
-
             </div>
           </div>
           <button class="slider-btn next-btn">

@@ -100,8 +100,8 @@
 }
 
 .optn {
-  display: flex;
-  align-items: center;
+  flex: 1;
+  min-width: 0; /* Prevent flex items from growing beyond container */
 }
 
 .optn i {
@@ -119,6 +119,7 @@
   align-items: center;
   width: 100%;
   padding: 0px 10px;
+  gap: 20px; /* Add consistent spacing between options */
 }
 
 .search i {
@@ -128,6 +129,58 @@
   border-radius: 50%;
   color: white;
   margin: 0;
+}
+
+/* Add these styles to your CSS */
+.prov-input .dropdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 10px; /* Add spacing between input and chevron */
+}
+
+/* Update the province input container */
+.prov-input > div {
+  display: flex;
+  align-items: center;
+  position: relative; /* For dropdown positioning */
+}
+
+.prov-input .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  margin-top: 5px;
+}
+
+.prov-input i.fa-chevron-down {
+  position: relative;
+  right: 0;
+  margin-left: 10px; /* Space between input and chevron */
+  cursor: pointer;
+}
+
+.prov-input .dropdown li {
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: black;
+}
+
+.prov-input .dropdown li:hover {
+  background-color: #f2f2f2;
+}
+
+.prov-input input {
+  cursor: pointer;
 }
 
 /* Image Card */
@@ -312,7 +365,8 @@
 
 .dropdown-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
 }
 
 .dropdown {
@@ -341,4 +395,8 @@
 
 .hidden {
   display: none;
+}
+
+.prov-choice {
+  display: flex;
 }

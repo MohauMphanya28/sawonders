@@ -48,36 +48,61 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Dropdown Logic
-const dropdownIcons = document.querySelectorAll(".dropdown-wrapper i");
+// // Dropdown Logic
+// const dropdownIcons = document.querySelectorAll(".dropdown-wrapper i");
 
-dropdownIcons.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    const dropdown = icon.nextElementSibling;
-    dropdown.classList.toggle("hidden");
+// dropdownIcons.forEach((icon) => {
+//   icon.addEventListener("click", () => {
+//     const dropdown = icon.nextElementSibling;
+//     dropdown.classList.toggle("hidden");
 
-    // Close other dropdowns
-    document.querySelectorAll(".dropdown").forEach((d) => {
-      if (d !== dropdown) d.classList.add("hidden");
+//     // Close other dropdowns
+//     document.querySelectorAll(".dropdown").forEach((d) => {
+//       if (d !== dropdown) d.classList.add("hidden");
+//     });
+//   });
+// });
+
+// // Click outside to close dropdowns
+// document.addEventListener("click", (e) => {
+//   if (!e.target.closest(".dropdown-wrapper")) {
+//     document.querySelectorAll(".dropdown").forEach((dropdown) => {
+//       dropdown.classList.add("hidden");
+//     });
+//   }
+// });
+
+// // Set input value from dropdown
+// document.querySelectorAll(".dropdown li").forEach((item) => {
+//   item.addEventListener("click", () => {
+//     const input = item.closest(".optn").querySelector("input");
+//     input.value = item.textContent;
+//     item.parentElement.classList.add("hidden");
+//   });
+// });
+
+
+// Province dropdown functionality
+  const provinceChevron = document.querySelector('.prov-input i.fa-chevron-down');
+  const provinceDropdown = document.querySelector('.prov-input .dropdown');
+  const provinceInput = document.getElementById('provinceInput');
+  
+  provinceChevron.addEventListener('click', (e) => {
+    e.stopPropagation();
+    provinceDropdown.classList.toggle('hidden');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.prov-input')) {
+      provinceDropdown.classList.add('hidden');
+    }
+  });
+
+  // Select province from dropdown
+  document.querySelectorAll('.prov-input .dropdown li').forEach(item => {
+    item.addEventListener('click', () => {
+      provinceInput.value = item.textContent;
+      provinceDropdown.classList.add('hidden');
     });
   });
-});
-
-// Click outside to close dropdowns
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".dropdown-wrapper")) {
-    document.querySelectorAll(".dropdown").forEach((dropdown) => {
-      dropdown.classList.add("hidden");
-    });
-  }
-});
-
-// Set input value from dropdown
-document.querySelectorAll(".dropdown li").forEach((item) => {
-  item.addEventListener("click", () => {
-    const input = item.closest(".optn").querySelector("input");
-    input.value = item.textContent;
-    item.parentElement.classList.add("hidden");
-  });
-});
-
